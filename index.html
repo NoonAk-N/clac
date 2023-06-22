@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="code.js" defer></script>
+    <script src="clac.js" defer></script>
+    <style>
+.message {
+    background-color: cadetblue;
+    color: chocolate;
+    padding: 1em;
+    width: 10em;
+}
+
+    </style>
+</head>
+<body>
+    
+    <h1>counter</h1>
+    <hr>
+    <script src="//unpkg.com/alpinejs" defer></script>
+ 
+    <div x-data="{counter : 0}">
+        <h2>Increment/decrement with AlpineJS</h2>
+        <div x-text="counter">
+            0
+        </div>
+        <button x-on:click="counter++">Increment</button>
+        <button x-on:click="counter--">Decrement</button>
+    </div>
+</body>
+</html>
